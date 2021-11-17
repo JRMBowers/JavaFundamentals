@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0ebbaf6-ec7c-4607-a991-25932bc085d7" name="Changes" comment="" />
+    <list default="true" id="c0ebbaf6-ec7c-4607-a991-25932bc085d7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/wordGuessingGame/WordGuessingGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/wordGuessingGame/WordGuessingGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/wordGuessingGame/WordGuessingGameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/wordGuessingGame/WordGuessingGameTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,7 +60,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Gradle.WordGuessingGameTest.testGetsWordToGuess">
+  <component name="RunManager" selected="Gradle.WordGuessingGameTest">
     <configuration name="WordGuessingGameTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -141,8 +147,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.WordGuessingGameTest.testGetsWordToGuess" />
         <item itemvalue="Gradle.WordGuessingGameTest" />
+        <item itemvalue="Gradle.WordGuessingGameTest.testGetsWordToGuess" />
         <item itemvalue="Gradle.WordGuessingGameTest.testGetsRandomWordFromDictionary" />
         <item itemvalue="Gradle.WordGuessingGameTest.testGetsRemainingAttempts" />
       </list>
@@ -164,7 +170,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/test/java/wordGuessingGame/WordGuessingGameTest.java</url>
-          <line>7</line>
+          <line>8</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

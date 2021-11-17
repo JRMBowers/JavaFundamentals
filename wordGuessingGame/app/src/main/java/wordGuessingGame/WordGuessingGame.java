@@ -9,18 +9,14 @@ public class WordGuessingGame {
     Integer remainingAttempts = 10 ;
     static final ArrayList<String> DICTIONARY = new ArrayList<>(Arrays.asList("MAKERS", "CANDIES", "DEVELOPER", "LONDON"));
 
-    WordGuessingGame(){
-        hiddenWord = getRandomWordFromDictionary();
+    WordGuessingGame(WordChooser chooser){
+        hiddenWord = chooser.getRandomWordFromDictionary();
     }
 
     public Integer getRemainingAttempts(){
         return remainingAttempts ;
     }
 
-    public String getRandomWordFromDictionary(){
-        Random rand = new Random();
-        return DICTIONARY.get(rand.nextInt(DICTIONARY.size()));
-    }
 
     public String getWordToGuess(){
         Integer lengthOfWord = hiddenWord.length();
