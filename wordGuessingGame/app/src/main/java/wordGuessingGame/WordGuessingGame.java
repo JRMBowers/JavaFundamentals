@@ -17,6 +17,15 @@ public class WordGuessingGame {
         return remainingAttempts ;
     }
 
+    public Boolean guessLetter(Character letter){
+        if (hiddenWord.indexOf(letter) >= 0 ){
+            return Boolean.TRUE;
+        }
+        else
+            remainingAttempts = remainingAttempts - 1 ;
+            return Boolean.FALSE;
+    }
+
 
     public String getWordToGuess(){
         Integer lengthOfWord = hiddenWord.length();

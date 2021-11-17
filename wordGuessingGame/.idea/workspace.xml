@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0ebbaf6-ec7c-4607-a991-25932bc085d7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/wordGuessingGame/WordGuessingGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/wordGuessingGame/WordGuessingGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/test/java/wordGuessingGame/WordGuessingGameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/wordGuessingGame/WordGuessingGameTest.java" afterDir="false" />
     </list>
@@ -60,7 +59,49 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Gradle.WordGuessingGameTest">
+  <component name="RunManager" selected="Gradle.ShoppingListTest.testShoppingList">
+    <configuration name="ShoppingListTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;wordGuessingGame.ShoppingListTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ShoppingListTest.testShoppingList" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;wordGuessingGame.ShoppingListTest.testShoppingList&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="WordGuessingGameTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -82,12 +123,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="WordGuessingGameTest.testGetsRandomWordFromDictionary" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="WordGuessingGameTest.testGuessLetter" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;wordGuessingGame.WordGuessingGameTest.testGetsRandomWordFromDictionary&quot;" />
+        <option name="scriptParameters" value="--tests &quot;wordGuessingGame.WordGuessingGameTest.testGuessLetter&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -103,33 +144,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="WordGuessingGameTest.testGetsRemainingAttempts" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="WordGuessingGameTest.testGuessLetterFalse" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;wordGuessingGame.WordGuessingGameTest.testGetsRemainingAttempts&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":app:test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="WordGuessingGameTest.testGetsWordToGuess" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;wordGuessingGame.WordGuessingGameTest.testGetsWordToGuess&quot;" />
+        <option name="scriptParameters" value="--tests &quot;wordGuessingGame.WordGuessingGameTest.testGuessLetterFalse&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -147,10 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ShoppingListTest.testShoppingList" />
+        <item itemvalue="Gradle.ShoppingListTest" />
+        <item itemvalue="Gradle.WordGuessingGameTest.testGuessLetterFalse" />
         <item itemvalue="Gradle.WordGuessingGameTest" />
-        <item itemvalue="Gradle.WordGuessingGameTest.testGetsWordToGuess" />
-        <item itemvalue="Gradle.WordGuessingGameTest.testGetsRandomWordFromDictionary" />
-        <item itemvalue="Gradle.WordGuessingGameTest.testGetsRemainingAttempts" />
+        <item itemvalue="Gradle.WordGuessingGameTest.testGuessLetter" />
       </list>
     </recent_temporary>
   </component>
@@ -170,8 +191,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/test/java/wordGuessingGame/WordGuessingGameTest.java</url>
-          <line>8</line>
+          <line>7</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/test/java/wordGuessingGame/ShoppingListTest.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
