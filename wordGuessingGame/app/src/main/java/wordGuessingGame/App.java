@@ -3,21 +3,63 @@
  */
 package wordGuessingGame;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class App {
     public static void main(String args[]) {
-        WordChooser chooser = new WordChooser();
-        Masker masker = new Masker();
-        WordGuessingGame game = new WordGuessingGame(chooser,masker);
-        System.out.println(masker.guessWord);
-        while (game.getRemainingAttempts() > 0 && !game.isGameWon()){
-            System.out.println(" Enter your guess:");
-            Scanner userInput = new Scanner(System.in);
-            Character guessAttempt = userInput.next().toUpperCase().charAt(0);
-            game.guessLetter(guessAttempt);
-            game.isGameWon();
-            game.isGameLost();
+
+        System.out.printf("Enter player1 name:");
+        Scanner player1input = new Scanner(System.in);
+        String player1Name = player1input.next();
+        System.out.printf("Enter player2 name:");
+        Scanner player2input = new Scanner(System.in);
+        String player2Name = player2input.next();
+
+
+        Random random = new Random();
+        Boolean player1Turn = random.nextBoolean();
+
+        WordChooser chooser1 = new WordChooser();
+        Masker masker1 = new Masker();
+        System.out.printf("%s :", player1Name);
+        WordGuessingGame game1 = new WordGuessingGame(chooser1, masker1);
+        System.out.println(game1.guessWord);
+        System.out.printf("%s :", player2Name);
+        WordGuessingGame game2 = new WordGuessingGame(chooser1, masker1);
+        System.out.println(game2.guessWord);
+
+
+        while (!game1.isGameWon() && !game2.isGameWon()){
+            if (player1Turn == true && !game1.isGameLost() && !game1.isGameWon()) {
+                System.out.printf("%s - %s \n",player1Name, game1.guessWord);
+                System.out.printf("%s - Enter your guess:", player1Name);
+                Scanner userInput = new Scanner(System.in);
+                Character guessAttempt = userInput.next().toUpperCase().charAt(0);
+                game1.guessLetter(guessAttempt);
+                game1.isGameWon();
+                game1.isGameLost();
+                player1Turn = false;
+            }
+
+            else if (!game2.isGameLost() && !game1.isGameWon()) {
+                System.out.printf("%s - %s\n",player2Name, game2.guessWord);
+                System.out.printf(" %s - Enter your guess:",player2Name);
+                Scanner userInput2 = new Scanner(System.in);
+                Character guessAttempt2 = userInput2.next().toUpperCase().charAt(0);
+                game2.guessLetter(guessAttempt2);
+                game2.isGameWon();
+                game2.isGameLost();
+                player1Turn = true;
+            }
+
         }
+        if (game1.isGameWon()){
+            System.out.printf("%s Wins",player1Name);
+        }
+        else{
+            System.out.printf("%s Wins",player2Name);
+        }
+
     }
 }

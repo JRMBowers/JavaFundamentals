@@ -22,11 +22,11 @@ public class WordGuessingGame {
 
     public Boolean guessLetter(Character letter){
         if (isGameLost()){
-            System.out.printf("You have no lives remaining");
+            System.out.printf("You have no lives remaining\n");
             return false;
         }
         if (isGameWon()){
-            System.out.printf("You have already won!");
+            System.out.printf("You have already won!\n");
             return true;
         }
         while (hiddenWord.toString().indexOf(letter) >= 0 ){
@@ -35,13 +35,12 @@ public class WordGuessingGame {
             return Boolean.TRUE;
         }
         remainingAttempts = remainingAttempts - 1 ;
-        System.out.printf("life lost, lives remaining %d",remainingAttempts);
+        System.out.printf("life lost (lives remaining: %d \n" ,remainingAttempts);
         return Boolean.FALSE;
     }
 
     public Boolean isGameLost(){
         if (getRemainingAttempts() <= 0){
-            System.out.println(" Better luck next time!");
             return true;
         }
         return false;
@@ -49,7 +48,6 @@ public class WordGuessingGame {
 
     public Boolean isGameWon(){
         if (guessWord.indexOf("_") == -1){
-            System.out.println("Congratulations you won!");
             return true;
         }
         return false;
