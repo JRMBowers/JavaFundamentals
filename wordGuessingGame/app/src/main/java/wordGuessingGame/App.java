@@ -3,12 +3,18 @@
  */
 package wordGuessingGame;
 
-public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+import java.util.Scanner;
 
-    public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+public class App {
+    public static void main(String args[]) {
+        WordChooser chooser = new WordChooser();
+        WordGuessingGame game = new WordGuessingGame(chooser);
+        System.out.println(game.getWordToGuess());
+        while (game.getRemainingAttempts() > 0){
+            System.out.println(" Enter your guess:");
+            Scanner userInput = new Scanner(System.in);
+            Character guessAttempt = userInput.next().charAt(0);
+            game.guessLetter(guessAttempt);
+        }
     }
 }

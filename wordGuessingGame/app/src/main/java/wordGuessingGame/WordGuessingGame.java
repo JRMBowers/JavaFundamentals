@@ -19,10 +19,12 @@ public class WordGuessingGame {
 
     public Boolean guessLetter(Character letter){
         if (hiddenWord.indexOf(letter) >= 0 ){
+            System.out.printf("Match!");
             return Boolean.TRUE;
         }
         else
             remainingAttempts = remainingAttempts - 1 ;
+            System.out.printf("life lost, lives remaining %d",remainingAttempts);
             return Boolean.FALSE;
     }
 
