@@ -8,13 +8,16 @@ import java.util.Scanner;
 public class App {
     public static void main(String args[]) {
         WordChooser chooser = new WordChooser();
-        WordGuessingGame game = new WordGuessingGame(chooser);
-        System.out.println(game.getWordToGuess());
-        while (game.getRemainingAttempts() > 0){
+        Masker masker = new Masker();
+        WordGuessingGame game = new WordGuessingGame(chooser,masker);
+        System.out.println(masker.guessWord);
+        while (game.getRemainingAttempts() > 0 && !game.isGameWon()){
             System.out.println(" Enter your guess:");
             Scanner userInput = new Scanner(System.in);
-            Character guessAttempt = userInput.next().charAt(0);
+            Character guessAttempt = userInput.next().toUpperCase().charAt(0);
             game.guessLetter(guessAttempt);
+            game.isGameWon();
+            game.isGameLost();
         }
     }
 }
